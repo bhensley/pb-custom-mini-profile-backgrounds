@@ -1,6 +1,6 @@
 /**
  * Custom Mini-Profile Background - ProBoards Plugin
- * Version 1.2.0
+ * Version 1.2.1
  * Keys Used: Super User Key
  *
  * Written by Bob Hensley (bob@bobbyhensley.com)
@@ -146,6 +146,7 @@ var CustomMiniProfile = {
 
 $(document).ready(function () {
   switch (pb.data('route').name) {
+    case 'all_recent_posts':
     case 'conversation':
     case 'thread':
       CustomMiniProfile.init();
