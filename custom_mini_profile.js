@@ -79,7 +79,7 @@ var CustomMiniProfile = {
       }
     }
 
-    if (self.uKey.get(uid) !== undefined && override === 'no') {
+    if (self.uKey.get(uid) !== undefined && (!override || override === 'no')) {
       bg = self.uKey.get(uid);
     }
 
